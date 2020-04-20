@@ -17,17 +17,17 @@ Pod::Spec.new do |spec|
 
   spec.name         = "ReSPGooglePlacesAutocomplete"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of ReSPGooglePlacesAutocomplete."
+  spec.summary      = "Repod of SPGooglePlacesAutocomplete."
+  spec.platform = :ios, '10.0'
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
+  spec.description  = "Repod of SPGooglePlacesAutocomplete."
 
-  spec.homepage     = "http://EXAMPLE/ReSPGooglePlacesAutocomplete"
+  spec.homepage     = "https://cocoapods.org/pods/SPGooglePlacesAutocomplete"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +38,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -69,7 +69,7 @@ Pod::Spec.new do |spec|
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
   # spec.osx.deployment_target = "10.7"
-  # spec.watchos.deployment_target = "2.0"
+  # spec.watchos.deployment_target = "1.0"
   # spec.tvos.deployment_target = "9.0"
 
 
@@ -79,7 +79,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/ReSPGooglePlacesAutocomplete.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/beekeweerts/ReSPGooglePlacesAutocomplete.git" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +90,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "ReSPGooglePlacesAutocomplete/*.{h,m}"
 
   # spec.public_header_files = "Classes/**/*.h"
 
